@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background-img{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../technology/background-technology-desktop.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.bar-navegation{
+    margin-top: 40px;
+    width: 96%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-line{
+    width: 545px;
+    height: 0.5px;
+    background-color: rgb(207, 207, 207);
+    position: absolute;
+    left: 169px;
+}
+.list-menu-area{
+    width: 57%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.list-menu-area nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 62px;
+}
+.list-menu-area nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.list-menu-area nav ul li{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    border-bottom: 3px solid transparent;
+    
+}
+.list-menu-area nav ul li:first-child{
+    margin-left: 0;
+}
+.list-menu-area nav ul li:hover{
+    border-bottom: 3px solid #FFF;
+}
+.list-menu-area nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    font-family: 'Barlow';
+    text-transform: uppercase;
+
+}
+.list-menu-area nav ul li span{
+    font-family: 'Barlow';
+    font-weight: 600;
+    margin-right: 7px;
+    color: #FFF;
+}
+.btn-menu,.list-menu-area-mobile{
+    display: none;
+}
+.container{
+    width:78%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container-technology{
+    width: 89%;
+    margin-left: auto;
+    margin-top: 69px;
+
+}
+.launch{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.span-number{
+    color: #8a8ca3;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.main-content-technology{
+    width:100% ;
+    height: 473px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.navegation-technology{
+    height: 270px;
+    
+}
+
+.navegation-technology nav{
+    height: 100%;
+}
+.navegation-technology nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.navegation-technology nav ul li{
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: 'Forum';
+    cursor: pointer;
+}
+.number{
+    color: #FFF;
+}
+.active-nav-tech{
+    background-color: #FFF;
+    color: #0b0e17;
+}
+.technology-content{
+    align-items: flex-start;
+    margin-left: 50px;
+}
+#title-technology{
+    color: #8a8ca3;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#name-technology{
+    font-family: 'Forum';
+    font-size: 68px;
+    font-weight: 400;
+    color: #FFF;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+#info-technology{
+    color: #8a8ca3;
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 58%;
+    
+}
+.text-area-technology{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.image-technology-area{
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#technology-img{
+   max-width: 460px;
+}
+#technology-img-tablet-mobile{
+    display: none;
+}
+@media (min-width:427px) and (max-width:768px){
+    .background-img{
+        display: none;
+    }
+    .background-img-techonology-tablet{
+        display: block;
+        width: 100%;
+        height: 131vh;
+        background-image: url('../technology/background-technology-tablet.jpg');
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .bar-navegation{
+        margin-top: 0;
+        height: 100px;
+    }
+    .header-line{
+        display: none;
+    }
+    .list-menu-area{
+        width: 65%;
+    }
+    .list-menu-area nav{
+        width: 100%;
+        margin: 0;
+    }
+    .list-menu-area nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .list-menu-area nav ul li{
+        margin-left: 0;
+    }
+    .list-menu-area nav ul li a {
+        letter-spacing: 1px;
+    }
+    .list-menu-area nav ul li a span{
+        display: none;
+    }
+    .btn-menu,.list-menu-area-mobile{
+        display: none;
+    }
+
+    .container-technology{
+        width: 100%;
+        margin-top: 45px;
+    }
+    .launch{
+        margin-left: 11%;
+    }
+    .main-content-technology{
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+             
+    }
+    section{
+        height: auto;
+    }
+    .text-area-technology{
+        width: 79%;
+        flex-direction: column-reverse;
+        margin-top: 75px;
+    }
+    .navegation-technology{
+        width: 45%;
+        height: auto;
+        margin-top: 35px;
+    }
+    .navegation-technology nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #technology-img{
+        display: none;
+    }
+    #technology-img-tablet-mobile{
+        display: flex;
+    }
+    .technology-content{
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #name-technology{
+        text-align: center;
+    }
+    #info-technology{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width:320px) and (max-width:426px){
+    .background-img, .background-img-techonology-tablet{
+        display: none;
+    }
+    .background-img-technology-mobile{
+        width: 100%;
+        background-image: url('../technology/background-technology-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    .header-line, .list-menu-area{
+        display: none;
+    }
+    .bar-navegation{
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .btn-menu{
+        display: flex;
+        cursor: pointer;
+    }
+    .hamburger{
+        display: flex;
+        width: 40px;
+        height: 32px;
+
+    }
+    .close{
+        display: none;
+        width: 40px;
+        height: 32px;
+    }
+    .list-menu-area-mobile{
+        width: 100%;
+        height: 88%;
+        display: none;
+        position: absolute;
+        background: rgb(11,14,23);
+        background: linear-gradient(180deg, rgba(11,14,23,1) 0%, rgba(255,255,255,1) 100%);
+        top: 100px;
+        left: 0;       
+    }
+    .animation-open{
+        display: flex;
+        animation: menuAnimationOpen ease-in 0.2s both;
+    }
+    .animation-close{
+        display: flex;
+        animation: menuAnimationClose ease-in-out 0.2s  reverse both;
+    }
+    .list-menu-area-mobile nav {
+        width: 86%;
+        height: 50%;
+        margin-top: 29px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFF;
+        border-radius: 10px;
+
+    }
+    .list-menu-area-mobile nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .list-menu-area-mobile nav ul li{
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-menu-area-mobile nav ul li a{
+        text-decoration: none;
+        color: #0b0e17;
+        font-weight: 600;
+        font-family: 'Barlow';
+        text-transform: uppercase;
+    }
+    .container-technology{
+        width: 86%;     
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20PX;
+    }
+    .container h1{
+        width: 100%;
+        font-size: 21px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    
+    .main-content-technology{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .text-area-technology{
+        flex-direction: column;
+    }
+    .navegation-technology{
+        height: 130px;
+        width: 280px;
+    }
+    .navegation-technology nav ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .technology-content{
+        margin-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    #name-technology{
+        font-size: 44px;
+    }
+    #info-technology{
+        width: 100%;
+    }
+    #technology-img{
+        display: none;
+    }
+    #technology-img-tablet-mobile{
+        display: flex;
+        width: 100%;
+    }
+}
+@keyframes menuAnimationOpen {
+    0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+}
+@keyframes menuAnimationClose{
+    0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+}

@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background-img{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../destination/background-destination-desktop.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.bar-navegation{
+    margin-top: 40px;
+    width: 96%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-line{
+    width: 545px;
+    height: 0.5px;
+    background-color: rgb(207, 207, 207);
+    position: absolute;
+    left: 169px;
+}
+.list-menu-area{
+    width: 57%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.list-menu-area nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 62px;
+}
+.list-menu-area nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.list-menu-area nav ul li{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    border-bottom: 3px solid transparent;
+    
+}
+.list-menu-area nav ul li:first-child{
+    margin-left: 0;
+}
+.list-menu-area nav ul li:hover{
+    border-bottom: 3px solid #FFF;
+}
+.list-menu-area nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    font-family: 'Barlow';
+    text-transform: uppercase;
+
+}
+.list-menu-area nav ul li span{
+    font-family: 'Barlow';
+    font-weight: 600;
+    margin-right: 7px;
+    color: #FFF;
+}
+.btn-menu, .list-menu-area-mobile{
+    display: none;
+}
+.container{
+    width:78%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pick{  
+    color: #fff;;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 400;
+    margin-top: 70px;
+    letter-spacing: 3px;
+}
+.container span{
+    color:#8a8ca3;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.main-content-destinations{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+}
+#planet{
+    width: 58%;
+}
+.planet-area{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-area{
+    width: 40%;
+    height: 393px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegation-destinations{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navegation-destinations nav{
+    height: 100%;
+}
+.navegation-destinations nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegation-destinations nav ul li{
+    height: 100%;
+    list-style: none;
+    font-family: 'Barlow';
+    color: #8a8ca3;
+    text-transform: uppercase;
+    margin-right: 30px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+}
+.navegation-destinations nav ul li:hover{
+    border-bottom: 4px solid #FFF;
+}
+
+#name-astro{
+    font-family: 'Forum';
+    font-size: 85px;
+    font-weight: 400;
+    color: #FFF;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+#about-astro{
+    color: #8a8ca3;
+    font-size: 16px;
+    font-family: 'Barlow';
+    line-height: 30px;
+}
+
+.line-destination{
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+    margin-top: 40px;
+    
+}
+
+.aditional-infos-area{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.distance{
+    width: 50%;
+}
+.distance h2,.travel-time h2{
+    color: #8a8ca3;
+    font-family: 'Barlow';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.distance p,.travel-time p{
+    color: #FFF;
+    font-family: 'Forum';
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.travel-time{
+    width:50%;
+}
+
+@media (min-width:427px) and (max-width:769px){
+    .background-img-home{
+        display: none;
+    }
+    .background-img-destination-tablet{
+        display: block;
+        width: 100%;
+        height: 121vh;
+        background-image: url('../destination/background-destination-tablet.jpg');
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .bar-navegation{
+        margin-top: 0;
+        height: 100px;
+    }
+    .header-line{
+        display: none;
+    }
+    .list-menu-area{
+        width: 65%;
+    }
+    .list-menu-area nav{
+        width: 100%;
+        margin: 0;
+    }
+    .list-menu-area nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .list-menu-area nav ul li{
+        margin-left: 0;
+    }
+    .list-menu-area nav ul li a {
+        letter-spacing: 1px;
+    }
+    .list-menu-area nav ul li a span{
+        display: none;
+    }
+    .container h1{
+        margin-top: 35px;
+    }
+    .btn-menu, .list-menu-area-mobile{
+        display: none;
+    }
+    .main-content-destinations{
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 65px;
+    }
+    section{
+        height: 87%;
+    }
+    .planet-area{
+        width: auto;
+    }
+    #planet{
+        width: 80%;
+    }
+    .text-area{
+        width: 100%;
+        text-align: center;
+    }
+    .navegation-destinations{
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navegation-destinations nav{
+        width: 50%;
+    }
+    .navegation-destinations nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegation-destinations nav ul li{
+        margin-right: 0;
+    }
+    #about-astro{
+        font-size: 18px;
+    }
+}
+@media (min-width:375px) and (max-width:426px){
+    .background-img, .background-img-destination-tablet{
+        display: none;
+    }
+    .background-img-destination-mobile{
+        width: 100%;
+        height: 111vh;
+        background-image: url('../destination/background-destination-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    .header-line, .list-menu-area{
+        display: none;
+    }
+    .bar-navegation{
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .btn-menu{
+        display: flex;
+        cursor: pointer;
+    }
+    .hamburger{
+        display: flex;
+        width: 40px;
+        height: 32px;
+
+    }
+    .close{
+        display: none;
+        width: 40px;
+        height: 32px;
+    }
+    .list-menu-area-mobile{
+        width: 100%;
+        height: 99%;
+        display: none;
+        position: absolute;
+        background: rgb(11,14,23);
+        background: linear-gradient(180deg, rgba(11,14,23,1) 0%, rgba(255,255,255,1) 100%);
+        top: 100px;
+        left: 0;  
+    }
+    .animation-open{
+        display: flex;
+        animation: menuAnimationOpen ease-in 0.2s both;
+    }
+    .animation-close{
+        display: flex;
+        animation: menuAnimationClose ease-in-out 0.2s  reverse both;
+    }
+    .list-menu-area-mobile nav {
+        width: 86%;
+        height: 50%;
+        margin-top: 29px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFF;
+        border-radius: 10px;
+
+    }
+    .list-menu-area-mobile nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .list-menu-area-mobile nav ul li{
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-menu-area-mobile nav ul li a{
+        text-decoration: none;
+        color: #0b0e17;
+        font-weight: 600;
+        font-family: 'Barlow';
+        text-transform: uppercase;
+    }
+    .container{
+        width: 86%;
+        height: auto;
+    }
+    .pick{
+        width: 100%;
+        font-size: 21px;
+        margin-top: 30px;
+    }
+    .main-content-destinations{
+        margin-top: 15px;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    .navegation-destinations{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .navegation-destinations nav{
+        width: 77%;
+    }
+    .navegation-destinations nav ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navegation-destinations nav ul li{
+        margin: 0;
+    } 
+    .text-area{
+        width: 100%;
+        height: auto;
+    }
+    .planet-area{
+        width: 70%;
+    }
+    #planet{
+        width: 100%;
+    }
+    .astro-content{
+        text-align: center;
+    }
+    #name-astro{
+        margin-top: 20px;
+    }
+    .line-destination{
+        margin-top: 20px;
+    }
+    .distance,.travel-time{
+        text-align: center;
+    }
+}
+
+@media (min-width:320px) and (max-width:374px){
+    .background-img, .background-img-destination-tablet{
+        display: none;
+    }
+    .background-img-destination-mobile{
+        width: 100%;
+        height: 103vh;
+        background-image: url('../destination/background-destination-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    .header-line, .list-menu-area{
+        display: none;
+    }
+    .bar-navegation{
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .btn-menu{
+        display: flex;
+        cursor: pointer;
+    }
+    .hamburger{
+        display: flex;
+        width: 40px;
+        height: 32px;
+
+    }
+    .close{
+        display: none;
+        width: 40px;
+        height: 32px;
+    }
+    .list-menu-area-mobile{
+        width: 100%;
+        height: 91%;
+        display: none;
+        position: absolute;
+        background: rgb(11,14,23);
+        background: linear-gradient(180deg, rgba(11,14,23,1) 0%, rgba(255,255,255,1) 100%);
+        top: 100px;
+        left: 0;       
+    }
+    .animation-open{
+        display: flex;
+        animation: menuAnimationOpen ease-in 0.2s both;
+    }
+    .animation-close{
+        display: flex;
+        animation: menuAnimationClose ease-in-out 0.2s  reverse both;
+    }
+    .list-menu-area-mobile nav {
+        width: 86%;
+        height: 50%;
+        margin-top: 29px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFF;
+        border-radius: 10px;
+
+    }
+    .list-menu-area-mobile nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .list-menu-area-mobile nav ul li{
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-menu-area-mobile nav ul li a{
+        text-decoration: none;
+        color: #0b0e17;
+        font-weight: 600;
+        font-family: 'Barlow';
+        text-transform: uppercase;
+    }
+    .container{
+        width: 86%;
+        height: auto;
+    }
+    .pick{
+        width: 100%;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .main-content-destinations{
+        margin-top: 15px;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    .navegation-destinations{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .navegation-destinations nav{
+        width: 77%;
+    }
+    .navegation-destinations nav ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navegation-destinations nav ul li{
+        margin: 0;
+    } 
+    .text-area{
+        width: 100%;
+        height: auto;
+    }
+    .planet-area{
+        width: 70%;
+    }
+    #planet{
+        width: 100%;
+    }
+    .astro-content{
+        text-align: center;
+    }
+    #name-astro{
+        margin-top: 20px;
+    }
+    .line-destination{
+        margin-top: 20px;
+    }
+    .distance,.travel-time{
+        text-align: center;
+    }
+}
+
+@keyframes menuAnimationOpen {
+    0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+}
+@keyframes menuAnimationClose{
+    0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+      }
+}
